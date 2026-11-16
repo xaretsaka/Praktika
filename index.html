@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>mobile.info</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <div id="top"></div>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="index.html" class="site-header__logo">mobile.info</a>
+      <button
+              class="site-header__toggle"
+              type="button"
+              aria-label="Открыть меню"
+              aria-expanded="false"
+              aria-controls="site-navigation"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <nav class="site-header__nav" id="site-navigation">
+        <a class="site-header__link" href="index.html#top">Главная</a>
+        <a class="site-header__link" href="index.html#catalog">Каталог</a>
+        <a class="site-header__link" href="index.html#about">О проекте</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <section class="hero">
+      <div class="container hero__container">
+        <div class="hero__content">
+          <div class="hero__left">
+            <h1 class="hero__title">Твой следующий<br><span class="hero__span">смартфон</span> начинается здесь.</h1>
+            <p class="hero__description">Изучай модели, сравнивай возможности и находи устройство под свой ритм. Без сложных терминов и рекламного шума.</p>
+            <div class="hero__actions">
+              <a class="hero__btn" href="#catalog">Смотреть каталог ↗</a>
+              <div class="hero__link-container">
+                <a class="hero__text-link" href="">Сравнить модели</a>
+                <a href="">→</a>
+              </div>
+            </div>
+          </div>
+          <div class="hero__right">
+            <img src="src/img/hero.png" alt="">
+          </div>    
+        </div>
+      </div>
+    </section>
+
+    <h1 id="catalog" class="page-title">Модели телефонов</h1>
+
+    <section class="work-grid">
+
+      <a href="iphone.html">
+        <article class="work-card">
+          <div class="work-card__media">
+            <img class="work-card__image work-card__iphone" src="src/img/iphone.png" alt="iphone">
+          </div>
+          <div class="work-card__body">
+            <p class="work-card__brand">apple</p>
+            <h2 class="work-card__title">iPhone 18 Pro</h2>
+            <p class="work-card__text">Компактный флагман для тех, кто ценит видео, производительность и экосистему Apple.</p>
+          </div>
+        </article>
+      </a>
+        
+      <a href="samsung.html">
+        <article class="work-card">
+          <div class="work-card__media">
+            <img class="work-card__image work-card__samsung" src="src/img/samsung.png" alt="samsung">
+          </div>
+          <div class="work-card__body">
+            <p class="work-card__brand">samsung</p>
+            <h2 class="work-card__title">Galaxy S26 Ultra</h2>
+            <p class="work-card__text">Большой экран, продвинутый зум — универсальный инструмент для работы и творчества.</p>
+          </div>
+        </article>
+      </a>
+        
+      <a href="google.html">
+        <article class="work-card">
+          <div class="work-card__media">
+            <img class="work-card__image work-card__google" src="src/img/pixel.png" alt="google">
+          </div>
+          <div class="work-card__body">
+            <p class="work-card__brand">google</p>
+            <h2 class="work-card__title">Pixel 11 Pro</h2>
+            <p class="work-card__text">Чистый Android, фирменные функции Google и камера с акцентом на вычислительную фотографию.</p>
+          </div>
+        </article>
+      </a>
+        
+      <a href="oneplus.html">
+        <article class="work-card">
+          <div class="work-card__media">
+            <img class="work-card__image work-card__oneplus" src="src/img/oneplus.png" alt="oneplus">
+          </div>
+          <div class="work-card__body">
+            <p class="work-card__brand">oneplus</p>
+            <h2 class="work-card__title">OnePlus 15</h2>
+            <p class="work-card__text">Высокая частота обновления, мощная платформа и большая батарея для активного использования.</p>
+          </div>
+        </article>
+      </a>
+        
+      <a href="xiaomi.html">
+        <article class="work-card">
+          <div class="work-card__media">
+            <img class="work-card__image work-card__xiaomi" src="src/img/xiaomi.png" alt="xiaomi">
+          </div>
+          <div class="work-card__body">
+            <p class="work-card__brand">xiaomi</p>
+            <h2 class="work-card__title">Xiaomi 17 Ultra</h2>
+            <p class="work-card__text">Флагманская камера Leica с большим сенсором и механическим оптическим зумом.</p>
+          </div>
+        </article>
+      </a>
+        
+      <a href="nothing.html">
+        <article class="work-card">
+          <div class="work-card__media">
+            <img class="work-card__image work-card__nothing" src="src/img/nothing.png" alt="nothing">
+          </div>
+          <div class="work-card__body">
+            <p class="work-card__brand">nothing</p>
+            <h2 class="work-card__title">Phone (3)</h2>
+            <p class="work-card__text">Необычный прозрачный дизайн, Glyph-интерфейс и фокус на индивидуальности.</p>
+          </div>
+        </article>
+      </a>
+    </section>
+
+    <section id="about" class="about">
+      <div class="about__container">
+        <div class="about__container-left">
+          <p class="about__text">🛈 О mobile.info</p>
+          <h1 class="about__title">Техника — это <span class="about__span">инструмент</span> для идей.</h1>
+        </div>
+        
+        <div class="about__container-right">
+          <p class="about__info">mobile.info — учебный проект о смартфонах и технологиях. Здесь собраны заметные модели, их ключевые особенности и небольшие подсказки, которые помогают разобраться в мире мобильных устройств.</p>
+          <a class="about__text-link" href="#top">Вернуться наверх ↑</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="site-footer">
+    <p class="site-footer__copyright">© ООО "mobile.info", 2026</p>
+  </footer>
+</body>
+</html>

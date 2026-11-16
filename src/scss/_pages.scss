@@ -1,0 +1,855 @@
+@use "variables" as *;
+
+.page-title {
+  margin-block: $gap;
+  font-size: 2rem;
+}
+
+.hero__container {
+  padding-inline: 0;
+}
+
+
+@media (max-width: 480px) {
+  .container {
+    padding-inline: 16px;
+  }
+
+  .site-header {
+    padding-block: 12px;
+
+    &__inner {
+      gap: 10px;
+      align-items: flex-start;
+    }
+
+    &__logo {
+      font-size: 1.05rem;
+    }
+
+    &__nav {
+      width: 100%;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    &__link {
+      font-size: .76rem;
+      white-space: nowrap;
+    }
+  }
+
+  .hero {
+    margin-bottom: 48px;
+
+    &__content {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 18px;
+    }
+
+    &__left,
+    &__right {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    &__title {
+      margin-top: 18px;
+      font-size: clamp(2.15rem, 10vw, 2.9rem);
+      line-height: 1.08;
+    }
+
+    &__description {
+      margin-top: 12px;
+      font-size: .95rem;
+      line-height: 1.5;
+    }
+
+    &__actions {
+      margin-top: 24px;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    &__btn {
+      padding: 9px 14px;
+      border-radius: 12px;
+      font-size: .9rem;
+    }
+
+    &__link-container {
+      gap: 6px;
+      font-size: .9rem;
+    }
+
+    &__right img {
+      width: 100%;
+      max-height: 230px;
+      object-fit: contain;
+    }
+  }
+
+  .page-title {
+    margin-block: 26px 16px;
+    font-size: 1.55rem;
+  }
+
+  .work-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .work-card {
+    &__media {
+      margin-top: 10px;
+    }
+
+    &__body {
+    padding: 10px;
+    height: 8.6rem;
+    }
+
+  &__title {
+    font-size: .95rem;
+    line-height: 1.2;
+    letter-spacing: -.04em;
+    }
+
+  &__text {
+    font-size: .79rem;
+    line-height: 1.4;
+    }
+
+  &__brand {
+    font-size: 10px;
+    letter-spacing: 1px;
+    }
+  }
+
+  .about {
+    margin-block: 52px;
+
+    &__container {
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    &__container-left,
+    &__container-right {
+      width: 100%;
+      max-width: 100%;
+      margin: 0;
+    }
+
+    &__title {
+      font-size: clamp(2rem, 9vw, 2.6rem);
+      line-height: 1.12;
+    }
+
+    &__info,
+    &__text {
+      font-size: .86rem;
+    }
+  }
+
+  .specs {
+    margin-top: 18px;
+
+    &__title {
+      margin-bottom: 18px;
+      font-size: clamp(1.8rem, 8vw, 2.35rem);
+      line-height: 1.12;
+    }
+
+    &__container {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 18px;
+    }
+
+    &__photo,
+    &__info {
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
+    }
+
+    &__subtitle {
+      font-size: .82rem;
+      line-height: 1.45;
+      letter-spacing: 0;
+    }
+
+    &__phone-spec {
+      margin-top: 8px;
+      font-size: .88rem;
+      line-height: 1.5;
+    }
+  }
+
+  .img-iphone,
+  .img-samsung,
+  .img-google,
+  .img-oneplus,
+  .img-xiaomi,
+  .img-nothing {
+    max-height: 270px;
+    margin: 8px auto 18px;
+    object-fit: contain;
+  }
+
+  .return {
+    margin-top: 18px;
+    padding: 9px 14px;
+    font-size: .9rem;
+  }
+
+  .more {
+    margin-top: 48px;
+
+    h2 {
+      font-size: 1.1rem;
+      line-height: 1.35;
+    }
+
+    &__cards {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+    }
+
+    &__link {
+      padding: 9px 12px;
+      font-size: .88rem;
+      text-align: center;
+    }
+  }
+
+  .note {
+    margin-block: 42px 36px;
+    padding-block: 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+
+    &__info,
+    &__source {
+      width: 100%;
+      max-width: 100%;
+      font-size: .78rem;
+      line-height: 1.45;
+    }
+
+    &__info {
+      margin-block: 0;
+    }
+
+    &__source {
+      overflow-wrap: anywhere;
+    }
+  }
+
+  .site-footer {
+    padding-block: 18px;
+
+    &__copyright {
+      padding-inline: 16px;
+      font-size: .78rem;
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  .work-card {
+    &__title {
+      font-size: .82rem;
+      line-height: 1.2;
+    }
+
+    &__text {
+      font-size: .68rem;
+      line-height: 1.35;
+    }
+
+    &__brand {
+      font-size: 9px;
+      letter-spacing: .7px;
+    }
+
+    &__body {
+      padding: 8px;
+    }
+  }
+}
+
+@media (min-width: 481px) {
+  .container {
+    padding-inline: 24px;
+  }
+
+  .site-header {
+    padding-block: 16px;
+
+    &__inner {
+      gap: 16px;
+    }
+
+    &__nav {
+      gap: 16px;
+    }
+
+    &__link {
+      font-size: .9rem;
+    }
+  }
+
+  .hero {
+    margin-bottom: 56px;
+
+    &__content {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 20px;
+    }
+
+    &__left,
+    &__right {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    &__title {
+      margin-top: 22px;
+      font-size: clamp(2.8rem, 7vw, 3.8rem);
+    }
+
+    &__description {
+      font-size: 1.05rem;
+    }
+
+    &__actions {
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+
+    &__right img {
+      width: 100%;
+      max-height: 320px;
+      object-fit: contain;
+    }
+  }
+
+  .page-title {
+    margin-block: 32px 20px;
+    font-size: 1.8rem;
+  }
+
+  .work-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+  }
+
+  .work-card {
+    &__text {
+      font-size: 0.9rem;
+    }
+  }
+
+  .about {
+    margin-block: 64px;
+
+    &__container {
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    &__container-left,
+    &__container-right {
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
+      margin: 0;
+    }
+
+    &__title {
+      font-size: clamp(2.3rem, 5vw, 3rem);
+      line-height: 1.12;
+    }
+  }
+
+  .specs {
+    margin-top: 24px;
+
+    &__title {
+      font-size: clamp(2.2rem, 5vw, 2.8rem);
+      line-height: 1.12;
+    }
+
+    &__container {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 18px;
+    }
+
+    &__photo,
+    &__info {
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
+    }
+
+    &__phone-spec {
+      margin-top: 8px;
+      font-size: .92rem;
+    }
+  }
+
+  .more {
+    margin-top: 58px;
+
+    &__cards {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 12px;
+    }
+
+    &__link {
+      font-size: 0.75rem;
+      text-align: center;
+    }
+  }
+
+  .note {
+    margin-block: 56px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+
+    &__info,
+    &__source {
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .work-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-inline: 32px;
+  }
+
+  .site-header {
+    &__inner {
+      align-items: center;
+    }
+
+    &__nav {
+      width: auto;
+      gap: 22px;
+    }
+
+    &__link {
+      font-size: 1rem;
+    }
+  }
+
+  .hero {
+    margin-bottom: 72px;
+
+    &__content {
+      flex-direction: row;
+      align-items: center;
+      gap: 28px;
+    }
+
+    &__left {
+      flex: 1 1 60%;
+      min-width: 0;
+    }
+
+    &__right {
+      flex: 0 1 40%;
+      width: 40%;
+      max-width: 40%;
+    }
+
+    &__title {
+      margin-top: 27px;
+      font-size: clamp(3.2rem, 6vw, 4.4rem);
+    }
+
+    &__description {
+      font-size: 1.1rem;
+    }
+
+    &__actions {
+      margin-top: 36px;
+      gap: 18px;
+    }
+
+    &__right img {
+      max-height: none;
+    }
+  }
+
+  .page-title {
+    margin-block: 36px 22px;
+    font-size: 2rem;
+  }
+
+  .work-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+  }
+
+  .work-card {
+    &__body {
+      height: 184px;
+    }
+
+    &__title {
+      font-size: 1.3rem;
+    }
+
+    &__text {
+      font-size: 1rem;
+    }
+  }
+
+  .about {
+    margin-block: 80px;
+
+    &__container {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 28px;
+    }
+
+    &__container-left {
+      flex: 1 1 60%;
+      max-width: 60%;
+      margin-left: 0;
+    }
+
+    &__container-right {
+      flex: 0 1 40%;
+      max-width: 40%;
+      margin-right: 0;
+    }
+
+    &__title {
+      font-size: clamp(2.7rem, 4.5vw, 3.2rem);
+    }
+  }
+
+  .specs {
+    margin-top: 28px;
+
+    &__title {
+      margin-bottom: 25px;
+      font-size: clamp(2.5rem, 4.5vw, 3.1rem);
+    }
+
+    &__container {
+      flex-direction: row;
+      align-items: center;
+      gap: 24px;
+    }
+
+    &__photo {
+      flex: 0 1 40%;
+      width: 40%;
+      max-width: 40%;
+      min-width: 0;
+    }
+
+    &__info {
+      flex: 1 1 60%;
+      width: 60%;
+      max-width: 60%;
+      min-width: 0;
+    }
+
+    &__phone-spec {
+      font-size: .95rem;
+    }
+  }
+
+  .img-samsung,
+  .img-google,
+  .img-oneplus {
+    margin-block: 24px 32px;
+  }
+
+  .more {
+    margin-top: 68px;
+
+    &__link {
+      font-size: 0.75rem;
+    }
+
+    &__cards {
+      display: flex;
+    }
+  }
+
+  .note {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    &__info {
+      flex: 1 1 50%;
+      max-width: 50%;
+    }
+
+    &__source {
+      flex: 1 1 50%;
+      max-width: 50%;
+      text-align: right;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .more {
+    &__link {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (min-width: 1025px) {
+  .container {
+    padding-inline: 36px;
+  }
+
+  .hero {
+    margin-bottom: 88px;
+
+    &__content {
+      gap: 40px;
+    }
+
+    &__left {
+      flex-basis: 60%;
+    }
+
+    &__right {
+      flex-basis: 40%;
+    }
+
+    &__title {
+      font-size: clamp(4rem, 5.5vw, 4.8rem);
+    }
+
+    &__description {
+      font-size: 1.2rem;
+    }
+
+    &__actions {
+      margin-top: 44px;
+    }
+  }
+
+  .work-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  .work-card {
+    &__body {
+      height: 209px;
+    }
+    
+  }
+
+  .about {
+    &__container {
+      gap: 36px;
+    }
+
+    &__container-left {
+      flex-basis: 62%;
+      max-width: 62%;
+    }
+
+    &__container-right {
+      flex-basis: 38%;
+      max-width: 38%;
+    }
+
+    &__title {
+      font-size: 3.3rem;
+    }
+  }
+
+  .specs {
+    &__photo {
+      flex-basis: 38%;
+      width: 38%;
+      max-width: 38%;
+    }
+
+    &__info {
+      flex-basis: 62%;
+      width: 62%;
+      max-width: 62%;
+    }
+  }
+
+  .more {
+
+    &__link {
+      font-size: 1.1rem;
+    }
+
+    &__cards {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}
+
+@media (min-width: 1281px) {
+  .container {
+    padding-inline: 0;
+  }
+
+  .hero {
+    &__title {
+      font-size: 4.8rem;
+    }
+  }
+
+  .about {
+    &__title {
+      font-size: 3.5rem;
+    }
+  }
+}
+
+
+@media (max-width: 767px) {
+  .site-header {
+    &__inner {
+      flex-wrap: nowrap;
+      align-items: center;
+      gap: 16px;
+    }
+
+    &__toggle {
+      display: flex;
+      width: 42px;
+      height: 42px;
+      padding: 10px;
+      flex: 0 0 42px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      border: 1px solid $color-border;
+      border-radius: 12px;
+      background: $color-card;
+      color: $color-text;
+      cursor: pointer;
+      transition: background .2s ease, border-color .2s ease;
+
+      span {
+        display: block;
+        width: 20px;
+        height: 2px;
+        border-radius: 2px;
+        background: currentColor;
+        transition: transform .2s ease, opacity .2s ease;
+      }
+
+      &:hover {
+        background: lighten($color-card, 5%);
+        border-color: rgba(192, 181, 255, .35);
+      }
+
+      &:focus-visible {
+        outline: 2px solid $color-hero;
+        outline-offset: 3px;
+      }
+    }
+
+    &__nav {
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      left: 0;
+      z-index: 101;
+      width: 100%;
+      padding: 10px 24px 16px;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+      background: $color-surface;
+      border-bottom: 1px solid $color-border;
+      box-shadow: 0 16px 28px rgba(0, 0, 0, .24);
+      backdrop-filter: blur(20px);
+    }
+
+    &__link {
+      display: block;
+      padding: 11px 0;
+      font-size: .95rem;
+
+      & + & {
+        border-top: 1px solid $color-border;
+      }
+    }
+
+    &--menu-open {
+      .site-header__nav {
+        display: flex;
+      }
+
+      .site-header__toggle span {
+        &:first-child {
+          transform: translateY(7px) rotate(45deg);
+        }
+
+        &:nth-child(2) {
+          opacity: 0;
+        }
+
+        &:last-child {
+          transform: translateY(-7px) rotate(-45deg);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .site-header {
+    &__toggle {
+      display: none;
+    }
+
+    &__nav {
+      position: static;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 0;
+      border: 0;
+      box-shadow: none;
+      background: transparent;
+      backdrop-filter: none;
+    }
+  }
+}

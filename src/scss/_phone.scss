@@ -1,0 +1,153 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+html {
+  scroll-behavior: smooth;
+}
+
+.specs {
+    margin-top: 25px;
+
+    &__title {
+        font-size: 50px;
+        font-weight: 700;
+        letter-spacing: -0.075em;
+        line-height: 1.08;
+        margin-bottom: 25px;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: $gap;
+    }
+
+    &__photo {
+        max-width: 40%;
+    }
+
+    &__subtitle {
+        font-size: 14px;
+        color: $color-muted;
+        letter-spacing: -0.075em;
+        line-height: 1em;
+    }
+
+    &__info {
+        max-width: 60%;
+    }
+
+    &__phone-spec {
+        color: white;
+    }
+
+    &__span {
+        color: $color-muted;
+    }
+}
+
+.more {
+    margin-top: 75px;
+
+    &__cards {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__link {
+        margin-top: 20px;
+        padding: 8px 16px;
+        border: 1px solid $color-muted;
+        border-radius: 20px;
+        display: inline-block;
+        transform: translateY(0);
+        transition: .5s ease;
+    }
+
+    &__link:hover {
+        transform: translateY(-2px);
+        color: $color-hero;
+        text-shadow: 0 0 35px rgba(157,139,255, .5);
+        border: 1px solid $color-hero;
+    }
+}
+
+.note {
+    margin-top: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid $color-border;
+    border-bottom: 1px solid $color-border;
+    margin-bottom: 75px;
+
+    &__info {
+        font-size: 12px;
+        max-width: 50%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    &__span {
+        color: $color-muted;
+    }
+
+    &__source {
+        font-size: 14px;
+    }
+
+    &__link {
+        color: $color-hero;
+    }
+
+}
+
+.return {
+    font-weight: 600;
+    transform: translateY(0);
+    display: inline-block;
+    transition: .5s ease;
+    font-size: 18px;
+    border: 0.5px solid $color-border;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-top: 25px;
+}
+
+.return:hover {
+    transform: translateY(-2px);
+    color: $color-hero;
+    text-shadow: 0 0 35px rgba(157,139,255, .5);
+    border: 0.5px solid $color-hero;
+    border-radius: 20px;
+}
+
+.img-iphone, .img-samsung, .img-google, .img-oneplus, .img-xiaomi, .img-nothing {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-samsung {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.img-google {
+    margin-top: 35px;
+    margin-bottom: 50px;
+}
+
+.img-oneplus {
+    margin-top: 35px;
+    margin-bottom: 50px;
+}
+
+.img-xiaomi {
+    margin-bottom: 50px;
+}
+
+.img-nothing {
+    margin-bottom: 50px;
+}
+

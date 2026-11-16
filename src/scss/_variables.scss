@@ -1,0 +1,18 @@
+$color-bg: #0b0d13;
+$color-surface: rgba(11,13,19,.82);
+$color-text: #f2f4f6;
+$color-muted: #9aa4af;
+$color-accent: #a7a1c3;
+$color-hero: #c0b5ff;
+$color-card: #151a24;
+$color-border: rgba(255,255,255,.055);
+
+$font-base: "Segoe UI", system-ui, sans-serif;
+$radius: 20px;
+$gap: 24px;
+$container: 1200px;
+
+$breakpoints: (
+  "md": 768px,
+  "lg": 1024px
+);

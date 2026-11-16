@@ -1,0 +1,48 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.site-header {
+  padding-block: $gap;
+  background: $color-surface;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid $color-border;
+  backdrop-filter: blur(20px);
+
+  &__logo {
+    font-weight: 700;
+    color: #c0b5ff;
+  }
+
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $gap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+
+  &__nav {
+    display: flex;
+    gap: $gap;
+  }
+
+  &__link {
+    color: $color-muted;
+    font-weight: 700;
+    transition: .2s ease-in;
+  }
+
+  &__link:hover {
+    color: white;
+  }
+}
+
+.site-footer {
+  margin-top: $gap;
+  padding-block: $gap;
+  color: $color-muted;
+}
