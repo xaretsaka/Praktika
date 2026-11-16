@@ -1,7 +1,4 @@
 node_modules/
-css/
-js/
-img/
 uploads/
 includes/db-config.php
 *.log
