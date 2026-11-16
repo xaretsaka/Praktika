@@ -146,6 +146,21 @@ html {
     font-size: 49px;
   }
 
+  &__info-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    border: 1.5px solid currentColor;
+    border-radius: 50%;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 13px;
+    line-height: 1;
+  }
+
   &__span {
     text-shadow: 0 0 35px rgba(157,139,255, .5);
     color: $color-hero;
