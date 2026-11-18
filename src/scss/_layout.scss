@@ -1,6 +1,7 @@
 @use "variables" as *;
 @use "mixins" as *;
 
+// Шапка и навигация сайта.
 .site-header {
   padding-block: $gap;
   background: $color-surface;
@@ -41,6 +42,7 @@
   }
 }
 
+// Общие стили нижней части сайта.
 .site-footer {
   margin-top: $gap;
   padding-block: $gap;

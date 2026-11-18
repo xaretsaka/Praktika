@@ -5,6 +5,7 @@ html {
   scroll-behavior: smooth;
 }
 
+// Блок с характеристиками выбранной модели.
 .specs {
     margin-top: 25px;
 
@@ -47,6 +48,7 @@ html {
     }
 }
 
+// Навигация к страницам других смартфонов.
 .more {
     margin-top: 75px;
 
@@ -73,6 +75,7 @@ html {
     }
 }
 
+// Примечание и ссылка на источник данных.
 .note {
     margin-top: 75px;
     display: flex;
@@ -103,6 +106,7 @@ html {
 
 }
 
+// Кнопка возврата на главную страницу.
 .return {
     font-weight: 600;
     transform: translateY(0);
@@ -123,6 +127,7 @@ html {
     border-radius: 20px;
 }
 
+// Выравнивание изображений на страницах моделей.
 .img-iphone, .img-samsung, .img-google, .img-oneplus, .img-xiaomi, .img-nothing {
     margin-left: auto;
     margin-right: auto;

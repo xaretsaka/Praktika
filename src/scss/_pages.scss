@@ -1,5 +1,6 @@
 @use "variables" as *;
 
+// Заголовок каталога.
 .page-title {
   margin-block: $gap;
   font-size: 2rem;
@@ -10,6 +11,7 @@
 }
 
 
+// Компактная версия для экранов до 480px.
 @media (max-width: 480px) {
   .container {
     padding-inline: 16px;
@@ -259,6 +261,7 @@
   }
 }
 
+// Дополнительная настройка карточек на узких экранах.
 @media (max-width: 430px) {
   .work-card {
     &__title {
@@ -282,6 +285,7 @@
   }
 }
 
+// Стили для экранов шире 480px.
 @media (min-width: 481px) {
   .container {
     padding-inline: 24px;
@@ -434,6 +438,7 @@
   }
 }
 
+// Две колонки каталога на мобильных устройствах.
 @media (max-width: 767px) {
   .work-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -442,6 +447,7 @@
   
 }
 
+// Адаптация блоков для планшетов и компьютеров.
 @media (min-width: 768px) {
   .container {
     padding-inline: 32px;
@@ -620,6 +626,7 @@
   }
 }
 
+// Корректировка ссылок на средних экранах.
 @media (max-width: 1024px) {
   .more {
     &__link {
@@ -628,6 +635,7 @@
   }
 }
 
+// Раскладка для широких экранов.
 @media (min-width: 1025px) {
   .container {
     padding-inline: 36px;
@@ -720,6 +728,7 @@
   }
 }
 
+// Дополнительные размеры для больших мониторов.
 @media (min-width: 1281px) {
   .container {
     padding-inline: 0;
@@ -739,6 +748,7 @@
 }
 
 
+// Бургер-меню и выпадающая навигация на телефонах.
 @media (max-width: 767px) {
   .site-header {
     &__inner {
@@ -834,6 +844,7 @@
   }
 }
 
+// Обычная горизонтальная навигация на широких экранах.
 @media (min-width: 768px) {
   .site-header {
     &__toggle {

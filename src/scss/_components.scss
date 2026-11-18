@@ -5,6 +5,7 @@ html {
   scroll-behavior: smooth;
 }
 
+// Сетка карточек каталога.
 .work-grid {
   display: grid;
   gap: $gap;
@@ -14,6 +15,7 @@ html {
   @include mq("lg") { grid-template-columns: repeat(3, 1fr); }
 }
 
+// Внешний вид карточки смартфона.
 .work-card {
   border: 1px solid $color-border;
   overflow: hidden;
@@ -47,6 +49,7 @@ html {
   }
 }
 
+// Главный блок на первой странице.
 .hero {
 
   margin-bottom: 0.8fr;
@@ -127,6 +130,7 @@ html {
 
 }
 
+// Информационный блок о проекте.
 .about {
 
   margin: 80px 0;
@@ -194,6 +198,7 @@ html {
   }
 }
 
+// Оформление копирайта в подвале.
 .site-footer {
   border-top: 1px solid $color-border;
   &__copyright {

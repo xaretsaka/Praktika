@@ -1,12 +1,14 @@
 @use "variables" as *;
 @use "sass:map";
 
+// Миксин для экранов разной ширины.
 @mixin mq($bp) {
   @media (min-width: map.get($breakpoints, $bp)) {
     @content;
   }
 }
 
+// Единое заполнение области изображением.
 @mixin cover {
   width: 100%;
   height: 100%;

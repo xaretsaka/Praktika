@@ -1,7 +1,9 @@
 @use "variables" as *;
 
+// Общие настройки элементов страницы.
 *, *::before, *::after { box-sizing: border-box; }
 
+// Основное оформление страницы.
 body {
   margin: 0;
   font-family: $font-base;
@@ -14,6 +16,7 @@ img { display: block; max-width: 100%; }
 a { color: inherit; text-decoration: none; }
 h1, h2, h3, p { margin: 0; }
 
+// Ограничение ширины основного содержимого.
 .container {
   width: 100%;
   max-width: $container;
